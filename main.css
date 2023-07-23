@@ -13,7 +13,16 @@ header{
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    padding: 0 1rem 0 1rem;
+}
+.logo{
+    height: 75%;
+    width: 10%;
+    overflow: hidden;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 nav, ul{
     display: flex;
@@ -28,15 +37,22 @@ li, a{
     color: aliceblue;
     display: flex;
     text-transform: uppercase;
+    padding-bottom: 0.2rem;
+}
+nav li a:hover{
+    transition: ease-in 0.3s;
+    border-bottom: 1px solid #FEE2B4;
+    color: #FEE2B4;
 }
 .firstScreen{
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 100%;
-    background-image: url(https://github.com/RSviatoslav/hapi/blob/79d821088a921fc1f3acb8f4422de0b282c8e61d/img%20/Bitmap.png?raw=true);
+    background-image: url(img/Bitmap.png);
     background-repeat: no-repeat;
     background-position: center;
 
@@ -52,7 +68,7 @@ li, a{
     flex-wrap: wrap;
     justify-content: center;
     color: white;
-    gap: 3rem;
+    gap: 1rem;
 }
 .firstText h1{
     font-size: 4.5rem;
@@ -84,19 +100,19 @@ li, a{
     border-radius: 0.75rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: rgb(255, 255, 255);
 }
 .choseApartment, .choseDate{
     height: 100%;
-    width: 40%;
+    width: auto;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 .choseApartment input, .choseDate input{
     height: 2.2rem;
-    width: auto;
+    width: 100%;
     border: none;
     text-align: center;
 }
