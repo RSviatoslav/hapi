@@ -1,0 +1,114 @@
+@import url(font/HelveticaNeueCyr-Light.ttf);
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica Neue;
+}
+header{
+    height: 15vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    padding: 0 1rem 0 1rem;
+}
+nav, ul{
+    display: flex;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    gap: 4rem;
+}
+li, a{
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+    display: flex;
+    text-transform: uppercase;
+}
+.firstScreen{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/Bitmap.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.firstScreen img{
+    object-fit: contain;
+    object-position: center;
+}
+.firstText{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    gap: 3rem;
+}
+.firstText h1{
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.firstText h5{
+    text-align: center;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 1.7rem */
+}
+.social{
+    display: flex;
+    gap: 1rem;
+}
+.bookIcon{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    margin-right: 0.5rem;
+}
+.bookLine{
+    height: 13vh;
+    width: 70%;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+}
+.choseApartment, .choseDate{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.choseApartment input, .choseDate input{
+    height: 2.2rem;
+    width: auto;
+    border: none;
+    text-align: center;
+}
+.submitBooking{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: none;
+    border-radius: 0.75rem;
+    height: 3rem;
+    width: 7rem;
+    gap: 0.8rem;
+    color: white;
+}
